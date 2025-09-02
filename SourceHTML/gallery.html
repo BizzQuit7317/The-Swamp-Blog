@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Swamp - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Swamp</h1>
+        <div class="header-row">
+            <div class="banner">Welcome to the murky depths</div>
+            <div class="auth-buttons">
+                <button>Login</button>
+                <button>Signup</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='gallery.html'">Gallery</button>
+        <button onclick="window.location.href='armies.html'">Armies</button>
+        <button onclick="window.location.href='battles.html'">Battles</button>
+        <button onclick="window.location.href='about.html'">About</button>
+    </nav>
+
+    <div class="gallery-controls">
+        <input type="text" placeholder="Search images...">
+        <button class="search-button">Search</button>
+        <select>
+            <option value="">Filter by...</option>
+            <option value="armies">Armies</option>
+            <option value="battles">Battles</option>
+            <option value="misc">Misc</option>
+        </select>
+        <button class="add-button">+ Add</button>
+    </div>
+    
+
+    <div class="gallery-grid">
+        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 1">
+        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 2">
+        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 3">
+        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 4">
+    </div>
+
+</body>
+</html>
