@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background-color: #f4f4f4;
+    color: #111;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* stack rows */
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+/* First row: centered title */
+header h1 {
+    margin: 0 auto;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+/* Second row: banner + auth buttons */
+header .header-row {
+    display: flex;
+    justify-content: center; /* center contents horizontally */
+    align-items: center;
+    margin-top: 10px;
+    position: relative; /* for absolute positioning of buttons */
+}
+
+/* Center the banner */
+.banner {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #444;
+}
+
+/* Move auth buttons to the right */
+.auth-buttons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+
+
+/* Nav Buttons */
+nav {
+    margin: 15px 0;
+}
+
+nav button {
+    background: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+nav button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Content Wrapper */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+.content p {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+
+.auth-buttons button {
+    margin: 0 5px;
+    padding: 5px 12px;
+    font-size: 0.9em;
+    border: 1px solid #333;
+    background: none;
+    cursor: pointer;
+}
+.auth-buttons button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Gallery controls */
+.gallery-controls {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-controls input,
+.gallery-controls select {
+    padding: 6px;
+    border: 1px solid #333;
+    font-family: inherit;
+}
+
+.add-button {
+    border: 1px solid #333;
+    background: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.add-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Gallery grid */
+.gallery-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
