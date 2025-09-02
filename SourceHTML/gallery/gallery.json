@@ -1,3 +1,13 @@
-[
-  gallery/
-]
+{
+    "images": [
+        {
+            "file": "68b6f4c2432b8.jpg",
+            "tags": [
+                "seraphon",
+		"terrain",
+		"wip"
+            ],
+            "uploadEpoch": 1756820674
+        }
+    ]
+}
