@@ -1,67 +1,41 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Courier New", monospace;
-    background-color: #f4f4f4;
-    color: #111;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Swamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Logo + Banner */
-header {
-    padding: 20px;
-    border-bottom: 2px solid #333;
-}
+    <header>
+        <h1>The Swamp</h1>
+        <div class="header-row">
+            <div class="banner">Welcome to the murky depths</div>
+            <div class="auth-buttons">
+                <button>Login</button>
+                <button>Signup</button>
+            </div>
+        </div>
+    </header>
+    
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
-}
+    <nav>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='gallery.html'">Gallery</button>
+        <button onclick="window.location.href='armies.html'">Armies</button>
+        <button onclick="window.location.href='battles.html'">Battles</button>
+        <button onclick="window.location.href='about.html'">About</button>
+    </nav>
 
-.banner {
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-style: italic;
-    color: #444;
-}
+    <div class="content">
+        <img src="https://via.placeholder.com/600x300" alt="Placeholder image">
+        <p>
+            This is a sample paragraph for The Swamp. Imagine battle reports, 
+            army setups, and photos from your games all living here. 
+            Keep it simple, keep it fast, keep it 90’s.
+        </p>
+    </div>
 
-/* Nav Buttons */
-nav {
-    margin: 15px 0;
-}
-
-nav button {
-    background: none;
-    border: 1px solid #333;
-    padding: 8px 16px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 1em;
-}
-
-nav button:hover {
-    background: #333;
-    color: #fff;
-}
-
-/* Content Wrapper */
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-}
-
-.content img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #333;
-}
-
-.content p {
-    text-align: left;
-    margin-top: 15px;
-    line-height: 1.5em;
-}
+</body>
+</html>
