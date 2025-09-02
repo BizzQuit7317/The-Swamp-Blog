@@ -20,11 +20,11 @@
     </header>
 
     <nav>
-        <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="window.location.href='gallery.html'">Gallery</button>
-        <button onclick="window.location.href='armies.html'">Armies</button>
-        <button onclick="window.location.href='battles.html'">Battles</button>
-        <button onclick="window.location.href='about.html'">About</button>
+        <button onclick="window.location.href='index.php'">Home</button>
+        <button onclick="window.location.href='gallery.php'">Gallery</button>
+        <button onclick="window.location.href='armies.php'">Armies</button>
+        <button onclick="window.location.href='battles.php'">Battles</button>
+        <button onclick="window.location.href='about.php'">About</button>
     </nav>
 
     <div class="gallery-controls">
@@ -38,13 +38,19 @@
         </select>
         <button class="add-button">+ Add</button>
     </div>
-    
 
-    <div class="gallery-grid">
-        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 1">
-        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 2">
-        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 3">
-        <img src="https://via.placeholder.com/200x150" alt="Placeholder image 4">
+    <div class="gallery-grid" id="gallery-grid">
+        <?php
+        // PHP dynamically loads images from the gallery folder
+        $dir = 'gallery/';
+        $images = array_diff(scandir($dir), array('.', '..'));
+        foreach ($images as $img) {
+            $ext = strtolower(pathinfo($img, PATHINFO_EXTENSION));
+            if (in_array($ext, ['jpg','jpeg','png','gif'])) {
+                echo '<img src="'.$dir.$img.'" alt="Gallery image">';
+            }
+        }
+        ?>
     </div>
 
 </body>
