@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background-color: #f4f4f4;
+    color: #111;
+    text-align: center;
+}
+
+/* Logo + Banner */
+header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.banner {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #444;
+}
+
+/* Nav Buttons */
+nav {
+    margin: 15px 0;
+}
+
+nav button {
+    background: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+nav button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Content Wrapper */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+.content p {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.5em;
+}
